@@ -32,15 +32,14 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 3em;
   letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
+  margin-bottom: 20px;
 }
+
 
 h2 {
   font-size: 1.2em;
   letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
+  margin-bottom: 15px;
   font-weight: normal;
   color: #C5C1C0;
 }
@@ -69,6 +68,10 @@ p {
 }
 
 /* search field */
+
+#top-instructions {
+	text-align: center;
+}
 
 .box{ 
   height: 50px;
@@ -145,3 +148,218 @@ p {
 
 }
 
+/* pagination */
+
+.pagination {
+    display: inline-block;
+    /*display: none;*/
+}
+
+.pagination-container {
+	clear: both;
+}
+
+.pagination a {
+    color: #C5C1C0;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #1a2930;
+    font-size: 22px;
+		cursor: pointer;
+}
+
+.pagination a.active {
+    background-color: #27363D;
+    color: #C5C1C0;
+    border: 1px solid #0A1612;
+}
+
+.pagination a:hover:not(.active) {
+	background-color: #1a2930;
+}
+
+/* movies-container */
+
+.movie-title {
+	text-align: center;
+}
+
+.thumbnail a>img {
+		max-width: 98%;
+}
+
+.thumbnail {
+	background-color: #1a2930;
+	border: none;
+}
+
+.caption p{
+	color: #C5C1C0;
+}
+
+.caption {
+	text-align: center;
+}
+
+.col-md-6 {
+	color: #C5C1C0;
+}
+
+.btn {
+	
+  font-weight: 400;
+
+	margin-top: 15px;
+	text-transform: uppercase;
+	background: #0D1C23;
+  color: #C5C1C0;
+	border: none;
+	cursor: pointer;
+	-webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+	-webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+	background: #C5C1C0;
+	color: #1a2930;
+}
+
+.pagination .ellipsis {
+	cursor: text;
+}
+
+.ui-dialog.custom-dialog .ui-widget-header {
+	background-color: #333;
+	color: #C5C1C0;
+	border: none;
+	text-transform: uppercase;
+}
+
+.ui-widget-content.custom-dialog {
+	background-color: #0A1612;
+	color: #C5C1C0;
+	border: none;
+}
+
+.ui-widget-content {
+	color: #C5C1C0;
+}
+
+@media(min-width: 960px) {
+	.thumbnail img {
+		width: 90%;
+		height: 580px;
+		-webkit-border-top-right-radius: 5px;
+  	-webkit-border-bottom-right-radius: 5px;
+  	-moz-border-radius-topright: 5px;
+  	-moz-border-radius-bottomright: 5px;
+  	border-top-right-radius: 5px;
+  	border-bottom-right-radius: 5px;
+		-webkit-border-top-left-radius: 5px;
+  	-webkit-border-bottom-left-radius: 5px;
+  	-moz-border-radius-topleft: 5px;
+  	-moz-border-radius-bottomleft: 5px;
+  	border-top-left-radius: 5px;
+  	border-bottom-left-radius: 5px;
+
+
+	}
+
+	.thumbnail {
+		height: 720px;
+	}
+}
+
+.ui-dialog-titlebar-close {
+    visibility: hidden;
+}
+
+
+#dialog .movie-section-1 {
+	background: #1a2930;
+	color: #C5C1C0;
+	//padding: 10px;
+	//margin: 15px;
+}
+
+#dialog .movie-plot {
+	background: #1a2930;
+	color: #C5C1C0;
+}
+
+.row {
+	margin: 10px;
+}
+@media(min-width: 960px) {
+	#dialog .col-md-3 img {
+		width: 95%;
+		height: 400px;
+		margin-left: auto;
+		margin-right: auto;
+		-webkit-border-top-right-radius: 5px;
+  	-webkit-border-bottom-right-radius: 5px;
+  	-moz-border-radius-topright: 5px;
+  	-moz-border-radius-bottomright: 5px;
+  	border-top-right-radius: 5px;
+  	border-bottom-right-radius: 5px;
+		-webkit-border-top-left-radius: 5px;
+  	-webkit-border-bottom-left-radius: 5px;
+  	-moz-border-radius-topleft: 5px;
+  	-moz-border-radius-bottomleft: 5px;
+  	border-top-left-radius: 5px;
+  	border-bottom-left-radius: 5px;
+
+	}
+
+	#dialog .well {
+		text-align: center;
+		border: none;
+		padding: 8px;
+		background: #27363D;
+	}
+}
+
+#dialog .movie-img {
+	float: right;
+	margin-top: 6%;
+	margin-right: 5%;
+}
+
+#dialog .movie-info-container {
+	//background: #0A1612;
+
+}
+
+.info-box {
+	background: #27363D;
+	padding: 10px;
+	padding-bottom: 0;
+}
+
+.movie-btns a {
+	display: inline-block;
+	color: #C5C1C0;
+
+}
+
+.movie-btns .imdb-link {
+	text-decoration: none;
+	outline: none;
+	margin-left: 5px;
+}
+
+.movie-btns {
+	text-align: center;
+	float: right;
+	padding-bottom: 20px;
+}

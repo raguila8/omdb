@@ -1,12 +1,32 @@
 <div class="center jumbotron">
-  <h1>Search for any Movie</h1>
+	<h1 id="top-instructions">Search for any Movie</h1>
 	<div class="row box">
-  	<div class="col-md-6 col-md-offset-3 search-container">
+		<div class="col-md-6 col-md-offset-3 search-container">
+			<form id="search-form">
     	<input type="search" id="search" placeholder="Search..." />
-      <button class="icon"><i class="fa fa-search"></i></button>
-     </div>
-   </div>
+    	<button class="icon"><i class="fa fa-search"></i></button>
+			</form>
+    </div>
+  </div>
 </div>
 
+<div class="pagination-container center"></div>
+<div id="movies-container"></div>
+<div class="pagination-container center"></div>
+<div id="dialog" title="Movie Information">
+	<div class="row">
+		<div class="col-md-12 movie-section-1">
+			<div class="col-md-6 movie-info"></div>
+			<div class="col-md-3 movie-img"></div>
+			<div class="col-md-4 movie-btns">
+				<a  class="btn btn-info close-dialog">Back to Search</a>
+				<a  class="btn btn-info imdb-link">View in IMDB</a>
+			</div>
 
-<h1>Movies#index</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 movie-plot"></div>
+	</div>	
+</div>
+
