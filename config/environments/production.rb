@@ -91,5 +91,5 @@ Rails.application.configure do
 	
 
 	# Generate digests for assets URLs
-	config.assets.digest = true
+	#config.assets.digest = true
 end
