@@ -35,7 +35,6 @@ function main() {
 					console.log("info-box open");
 					var imdbID = $(this).attr('id');
 					self.movieInfo(imdbID);
-					//$('#dialog').prepend(imdbID);
 					$('#dialog').dialog('open');
 				});
 			},
@@ -48,7 +47,6 @@ function main() {
 					async: false,
 					success: function(data) {
 						if (data.Response === "True") {
-							//console.log(data);
 							self.putsMovieInfo(data);
 						} else {
 							// error
@@ -71,10 +69,7 @@ function main() {
 					}
 
 				$('#dialog .movie-img').html(html);
-				//$('#dialog .col-md-4').html("hello");
 				html = "<h1 style=\"font-weight: bold;\">" + data.Title + "</h1>";
-
-				//$('#dialog .col-md-8').html(html);
 				html += "<div class=\"info-box\">";
 				$.each(data, function(key, val) {
 					console.log("key: " + key + "	val: "+ val);
@@ -85,7 +80,6 @@ function main() {
 					}
 				});
 				html += "</div>";
-				//html += "<p class=\"plot\"><b>Plot</b>: " + data.Plot;
 				$('#dialog .movie-info').html(html);
 				html = "<h2 style=\"font-weight: bold;\">Plot</h1>";
 
@@ -101,14 +95,10 @@ function main() {
 				var self = this;
 				$("button").on("click", function(e) {
     			var query = $("#search").val();
-					//omdb.movieSearch(query);
-					//omdb.paginate();
-    			//getMovies(query);
 					self.query = query;
 					self.moviePages.clear();
 					self.currentPage = 1;
 					omdb.getPage();
-					//omdb.newPage();
     			e.preventDefault();
   			});
 			},
@@ -135,14 +125,8 @@ function main() {
 									$('.pagination-container').html("");
 								}
 							}
-							//omdb.newPage();
 							self.moviePages.set(self.currentPage, data.Search);
 							self.putsMovies(data.Search);
-							/*if ($('.pagination').css('display') === "none" && self.totalMovies > self.perPage) {
-								$('.pagination').css('display', 'inline-block');
-							} else if ($('.pagination').css('display') === "inline-block" && self.totalMovies <= self.perPage) {
-								$('.pagination').css('display', 'none');
-							}*/
 						} else {
 							// error
 						}
@@ -163,9 +147,7 @@ function main() {
 
 			newPage: function() {
 				var self = this;
-				//$("." + self.currentPage).removeClass('active');
-				//console.log("currentPage:" + self.currentPage);
-				$('.pagination-container').on('click', 'a', function() {
+					$('.pagination-container').on('click', 'a', function() {
 					$("." + self.currentPage).removeClass('active');
 					var id = $(this).attr("class");
 					console.log("id: " + id);
@@ -182,9 +164,7 @@ function main() {
 					}
 					if (self.totalPages > 10) {
 						self.updatePagination();
-						//console.log("updating pagination");
 					}
-					//console.log("page after: "+ self.currentPage);
 					console.log("current Page: " + self.currentPage);
 					$("." + self.currentPage).addClass('active');
 					self.getPage();
@@ -268,7 +248,6 @@ function main() {
 						self.paginationNums.push(i);
 					}
 					pagination += "<a class=\"ellipsis\">...</a>";
-					//pagination += "<a id=\"" + self.totalPages + "\"></a>";
 				} else {
 					for (i = 2; i < self.totalPages + 1; i++) {
 						pagination += "<a class=\"" + i + "\">" + i + "</a>";
@@ -277,7 +256,6 @@ function main() {
 				}
 				pagination += "<a class=\"next\">&raquo;</a>" +
 														"</div>";
-				//$('.pagination-container').html('#);
 				$('.pagination-container').html(pagination);
 			},
 
