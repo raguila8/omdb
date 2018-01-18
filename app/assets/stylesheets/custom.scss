@@ -255,6 +255,98 @@ p {
 	color: #C5C1C0;
 }
 
+@media screen and (max-width: 500px) {
+	.pagination a {
+		font-size: 11px;
+		padding: 4px 5px;
+	}
+
+	p {
+		font-size: 8px;
+	}
+
+	#dialog .col-md-3 img {
+		width: 85%;
+		height: 200px;
+		margin-left: auto;
+		margin-right: auto;
+		-webkit-border-top-right-radius: 5px;
+  	-webkit-border-bottom-right-radius: 5px;
+  	-moz-border-radius-topright: 5px;
+  	-moz-border-radius-bottomright: 5px;
+  	border-top-right-radius: 5px;
+  	border-bottom-right-radius: 5px;
+		-webkit-border-top-left-radius: 5px;
+  	-webkit-border-bottom-left-radius: 5px;
+  	-moz-border-radius-topleft: 5px;
+  	-moz-border-radius-bottomleft: 5px;
+  	border-top-left-radius: 5px;
+  	border-bottom-left-radius: 5px;
+
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.pagination a {
+		font-size: 16px;
+		padding: 6px 11px;
+	}
+
+	p {
+		font-size: 10px;
+	}
+
+	#dialog .col-md-3 img {
+		width: 90%;
+		height: 250px;
+		margin-left: auto;
+		margin-right: auto;
+		-webkit-border-top-right-radius: 5px;
+  	-webkit-border-bottom-right-radius: 5px;
+  	-moz-border-radius-topright: 5px;
+  	-moz-border-radius-bottomright: 5px;
+  	border-top-right-radius: 5px;
+  	border-bottom-right-radius: 5px;
+		-webkit-border-top-left-radius: 5px;
+  	-webkit-border-bottom-left-radius: 5px;
+  	-moz-border-radius-topleft: 5px;
+  	-moz-border-radius-bottomleft: 5px;
+  	border-top-left-radius: 5px;
+  	border-bottom-left-radius: 5px;
+	}
+
+}
+
+@media screen and (max-width: 992px) {
+    p {
+        font-size: 12px;
+    }
+
+		#dialog .col-md-3 img {
+		width: 95%;
+		height: 300px;
+		margin-left: auto;
+		margin-right: auto;
+		-webkit-border-top-right-radius: 5px;
+  	-webkit-border-bottom-right-radius: 5px;
+  	-moz-border-radius-topright: 5px;
+  	-moz-border-radius-bottomright: 5px;
+  	border-top-right-radius: 5px;
+  	border-bottom-right-radius: 5px;
+		-webkit-border-top-left-radius: 5px;
+  	-webkit-border-bottom-left-radius: 5px;
+  	-moz-border-radius-topleft: 5px;
+  	-moz-border-radius-bottomleft: 5px;
+  	border-top-left-radius: 5px;
+  	border-bottom-left-radius: 5px;
+
+	}
+
+}
+
+
+
+
 @media(min-width: 960px) {
 	.thumbnail img {
 		width: 90%;
@@ -324,6 +416,8 @@ p {
 }
 
 
+
+
 #dialog .well {
 		text-align: center;
 		border: none;
@@ -366,6 +460,8 @@ p {
 	padding-bottom: 20px;
 }
 
+
+
 @media screen and (max-width: 1200px) {
 		#dialog .col-md-3 img {
 		width: 95%;
@@ -389,93 +485,4 @@ p {
 }
 
 
-@media screen and (max-width: 992px) {
-    p {
-        font-size: 12px;
-    }
-
-		#dialog .col-md-3 img {
-		width: 95%;
-		height: 300px;
-		margin-left: auto;
-		margin-right: auto;
-		-webkit-border-top-right-radius: 5px;
-  	-webkit-border-bottom-right-radius: 5px;
-  	-moz-border-radius-topright: 5px;
-  	-moz-border-radius-bottomright: 5px;
-  	border-top-right-radius: 5px;
-  	border-bottom-right-radius: 5px;
-		-webkit-border-top-left-radius: 5px;
-  	-webkit-border-bottom-left-radius: 5px;
-  	-moz-border-radius-topleft: 5px;
-  	-moz-border-radius-bottomleft: 5px;
-  	border-top-left-radius: 5px;
-  	border-bottom-left-radius: 5px;
-
-	}
-
-}
-
-@media screen and (max-width: 767px) {
-	.pagination a {
-		font-size: 16px;
-		padding: 6px 11px;
-	}
-
-	p {
-		font-size: 10px;
-	}
-
-	#dialog .col-md-3 img {
-		width: 90%;
-		height: 250px;
-		margin-left: auto;
-		margin-right: auto;
-		-webkit-border-top-right-radius: 5px;
-  	-webkit-border-bottom-right-radius: 5px;
-  	-moz-border-radius-topright: 5px;
-  	-moz-border-radius-bottomright: 5px;
-  	border-top-right-radius: 5px;
-  	border-bottom-right-radius: 5px;
-		-webkit-border-top-left-radius: 5px;
-  	-webkit-border-bottom-left-radius: 5px;
-  	-moz-border-radius-topleft: 5px;
-  	-moz-border-radius-bottomleft: 5px;
-  	border-top-left-radius: 5px;
-  	border-bottom-left-radius: 5px;
-	}
-
-}
-
-@media screen and (max-width: 500px) {
-	.pagination a {
-		font-size: 11px;
-		padding: 4px 5px;
-	}
-
-	p {
-		font-size: 8px;
-	}
-
-	#dialog .col-md-3 img {
-		width: 85%;
-		height: 200px;
-		margin-left: auto;
-		margin-right: auto;
-		-webkit-border-top-right-radius: 5px;
-  	-webkit-border-bottom-right-radius: 5px;
-  	-moz-border-radius-topright: 5px;
-  	-moz-border-radius-bottomright: 5px;
-  	border-top-right-radius: 5px;
-  	border-bottom-right-radius: 5px;
-		-webkit-border-top-left-radius: 5px;
-  	-webkit-border-bottom-left-radius: 5px;
-  	-moz-border-radius-topleft: 5px;
-  	-moz-border-radius-bottomleft: 5px;
-  	border-top-left-radius: 5px;
-  	border-bottom-left-radius: 5px;
-
-	}
-
-}
 
